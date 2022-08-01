@@ -1,0 +1,266 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "burnFrom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "burnFrom(address,uint256)": "79cc6790",
+    "mint(address,uint256)": "40c10f19"
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/IMilk.sol",
+    "id": 28064,
+    "exportedSymbols": {
+      "IMilk": [
+        28063
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:171:35",
+    "nodes": [
+      {
+        "id": 28048,
+        "nodeType": "PragmaDirective",
+        "src": "33:24:35",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".15"
+        ]
+      },
+      {
+        "id": 28063,
+        "nodeType": "ContractDefinition",
+        "src": "61:143:35",
+        "nodes": [
+          {
+            "id": 28055,
+            "nodeType": "FunctionDefinition",
+            "src": "84:51:35",
+            "functionSelector": "40c10f19",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nameLocation": "93:4:35",
+            "parameters": {
+              "id": 28053,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 28050,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "106:2:35",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 28055,
+                  "src": "98:10:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 28049,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "98:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 28052,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "118:6:35",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 28055,
+                  "src": "110:14:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 28051,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "110:7:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "97:28:35"
+            },
+            "returnParameters": {
+              "id": 28054,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "134:0:35"
+            },
+            "scope": 28063,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 28062,
+            "nodeType": "FunctionDefinition",
+            "src": "141:60:35",
+            "functionSelector": "79cc6790",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "burnFrom",
+            "nameLocation": "150:8:35",
+            "parameters": {
+              "id": 28060,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 28057,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "167:7:35",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 28062,
+                  "src": "159:15:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 28056,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "159:7:35",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 28059,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "184:6:35",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 28062,
+                  "src": "176:14:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 28058,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "176:7:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "158:33:35"
+            },
+            "returnParameters": {
+              "id": 28061,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "200:0:35"
+            },
+            "scope": 28063,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IMilk",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          28063
+        ],
+        "name": "IMilk",
+        "nameLocation": "71:5:35",
+        "scope": 28064,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 35
+}
